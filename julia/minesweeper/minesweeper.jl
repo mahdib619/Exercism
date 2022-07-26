@@ -1,9 +1,9 @@
 dirs = [(-1, -1), (0, -1), (1, -1), (-1, 0), (1, 0), (-1, 1), (0, 1), (1, 1)]
 function annotate(field)
-    for r in 1:length(field)
+    for r in eachindex(field)
         row = collect(field[r])
 
-        for c in 1:length(row)
+        for c in eachindex(row)
             row[c] == '*' && continue
 
             minecount = 0
