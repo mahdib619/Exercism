@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "ErikSchierboom"
+  ],
+  "contributors": [
+    "j2jensen",
+    "robkeim",
+    "tushartyagi",
+    "wolf99"
+  ],
+  "files": {
+    "solution": [
+      "ParallelLetterFrequency.cs"
+    ],
+    "test": [
+      "ParallelLetterFrequencyTests.cs"
+    ],
+    "example": [
+      ".meta/Example.cs"
+    ]
+  },
+  "blurb": "Count the frequency of letters in texts using parallel computation."
+}
