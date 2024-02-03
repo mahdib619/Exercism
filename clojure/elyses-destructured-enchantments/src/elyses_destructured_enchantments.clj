@@ -2,27 +2,24 @@
 
 (defn first-card
   "Returns the first card from deck."
-  [deck] (let [[f] deck]
-           f))
+  [[f]] f)
 
 (defn second-card
   "Returns the second card from deck."
-  [deck] (let [[f s] deck]
-           s))
+  [[_ s]] s)
 
 (defn swap-top-two-cards
   "Returns the deck with first two items reversed."
-  [deck] (let [[f s] deck]
-           (concat [s f] (nthrest deck 2))))
+  [[f s & remain]] (concat [s f] remain))
 
 (defn discard-top-card
   "Returns a sequence containing the first card and
    a sequence of the remaining cards in the deck."
-  [deck])
+  [[f & remain]] [f remain])
 
 (def face-cards
   ["jack" "queen" "king"])
 
 (defn insert-face-cards
   "Returns the deck with face cards between its head and tail."
-  [deck])
+  [[f & remain]] (remove nil? (flatten [f face-cards remain])))

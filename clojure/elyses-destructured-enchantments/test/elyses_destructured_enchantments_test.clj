@@ -26,17 +26,17 @@
 (deftest ^{:task 3} swap-top-two-cards-5-test
   (is (= [4 10 3 7 8] (elyses-destructured-enchantments/swap-top-two-cards [10 4 3 7 8]))))
 
-;; (deftest ^{:task 4} discard-top-card-single-test
-;;   (is (= [7 nil] (discard-top-card [7]))))
+(deftest ^{:task 4} discard-top-card-single-test
+  (is (= [7 nil] (elyses-destructured-enchantments/discard-top-card [7]))))
 
-;; (deftest ^{:task 4} discard-top-card-4-test
-;;   (is (= [9 [2 10 4]] (discard-top-card [9 2 10 4]))))
+(deftest ^{:task 4} discard-top-card-4-test
+  (is (= [9 [2 10 4]] (elyses-destructured-enchantments/discard-top-card [9 2 10 4]))))
 
-;; (deftest ^{:task 5} insert-face-cards-3-test
-;;   (is (= [3 "jack" "queen" "king" 10 7] (insert-face-cards [3 10 7]))))
+(deftest ^{:task 5} insert-face-cards-3-test
+  (is (= [3 "jack" "queen" "king" 10 7] (elyses-destructured-enchantments/insert-face-cards [3 10 7]))))
 
-;; (deftest ^{:task 5} insert-face-cards-1-test
-;;   (is (= [9 "jack" "queen" "king"] (insert-face-cards [9]))))
+(deftest ^{:task 5} insert-face-cards-1-test
+  (is (= [9 "jack" "queen" "king"] (elyses-destructured-enchantments/insert-face-cards [9]))))
 
-;; (deftest ^{:task 5} insert-face-cards-empty-test
-;;   (is (= ["jack" "queen" "king"] (insert-face-cards []))))
+(deftest ^{:task 5} insert-face-cards-empty-test
+  (is (= ["jack" "queen" "king"] (elyses-destructured-enchantments/insert-face-cards []))))
