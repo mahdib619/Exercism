@@ -1,0 +1,1 @@
+isisogram(s) = !occursin(r".*(\w).*(?=\1).*"i, s)
