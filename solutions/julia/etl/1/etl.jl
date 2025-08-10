@@ -1,0 +1,1 @@
+transform(input::AbstractDict) = Dict([lowercase(vi) => k for (k, v) in input for vi in v])

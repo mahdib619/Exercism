@@ -1,0 +1,1 @@
+trinary_to_decimal(str) = !occursin(r"^[0-2]*$", str) ? 0 : sum([n * 3^m for (n, m) in zip(parse.(Int, split(str, "")), length(str)-1:-1:0)])
